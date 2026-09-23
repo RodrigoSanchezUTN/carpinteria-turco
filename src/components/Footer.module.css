@@ -1,0 +1,44 @@
+.footer {
+  background: var(--color-ink);
+  color: rgba(251, 247, 240, 0.7);
+  padding: 48px 0 28px;
+}
+
+.inner {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  gap: 22px;
+  text-align: center;
+}
+
+.brand {
+  font-family: var(--font-display);
+  font-size: 1.15rem;
+  color: var(--color-cream);
+}
+
+.links {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+  gap: 20px;
+  font-size: 0.88rem;
+}
+
+.links a:hover {
+  color: var(--color-cream);
+}
+
+.copy {
+  font-size: 0.8rem;
+  color: rgba(251, 247, 240, 0.5);
+}
+
+@media (min-width: 768px) {
+  .inner {
+    flex-direction: row;
+    justify-content: space-between;
+    text-align: left;
+  }
+}

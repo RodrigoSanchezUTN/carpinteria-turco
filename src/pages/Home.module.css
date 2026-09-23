@@ -1,0 +1,14 @@
+.cta {
+  padding: 90px 0;
+  background: var(--color-cream);
+  text-align: center;
+}
+
+.cta h2 {
+  font-size: clamp(1.8rem, 3.2vw, 2.4rem);
+}
+
+.cta p {
+  margin: 14px auto 28px;
+  max-width: 480px;
+}

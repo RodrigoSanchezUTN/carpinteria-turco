@@ -1,0 +1,28 @@
+.section {
+  padding: 90px 0;
+  background: var(--color-beige);
+}
+
+.grid {
+  display: grid;
+  gap: 28px;
+  grid-template-columns: 1fr;
+}
+
+@media (min-width: 640px) {
+  .grid {
+    grid-template-columns: repeat(2, 1fr);
+  }
+}
+
+@media (min-width: 1024px) {
+  .grid {
+    grid-template-columns: repeat(3, 1fr);
+  }
+}
+
+.moreWrap {
+  display: flex;
+  justify-content: center;
+  margin-top: 48px;
+}

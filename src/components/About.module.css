@@ -1,0 +1,45 @@
+.about {
+  padding: 90px 0;
+  background: var(--color-cream);
+}
+
+.grid {
+  display: grid;
+  gap: 48px;
+}
+
+.imageWrap img {
+  width: 100%;
+  height: 100%;
+  min-height: 320px;
+  object-fit: cover;
+  border-radius: var(--radius-lg);
+  box-shadow: var(--shadow-soft);
+}
+
+.features {
+  display: grid;
+  gap: 26px;
+  margin-top: 8px;
+}
+
+.features h3 {
+  font-size: 1.1rem;
+  margin-bottom: 6px;
+}
+
+.features p {
+  font-size: 0.95rem;
+}
+
+@media (min-width: 900px) {
+  .grid {
+    grid-template-columns: 0.9fr 1.1fr;
+    align-items: center;
+  }
+
+  .features {
+    grid-template-columns: repeat(3, 1fr);
+    gap: 32px;
+  }
+}
